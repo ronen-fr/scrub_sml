@@ -1,0 +1,29 @@
+---
+Language: Cpp
+BasedOnStyle: Google
+AllowShortBlocksOnASingleLine: true
+AllowShortFunctionsOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+ColumnLimit: 110
+MaxEmptyLinesToKeep: 1
+Cpp11BracedListStyle: false
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+BinPackParameters: false
+BreakBeforeBraces: Custom
+BraceWrapping:   
+  SplitEmptyFunction: false
+  AfterClass: false
+  AfterFunction: true
+DerivePointerAlignment: false
+PointerAlignment: Left
+AlwaysBreakTemplateDeclarations: MultiLine
+BreakConstructorInitializers: BeforeComma
+KeepEmptyLinesAtTheStartOfBlocks: true
+SortIncludes:    false
+ContinuationIndentWidth: 2
+UseTab: Always
+# AllowShortBlocksOnASingleLine: Always
+AllowShortCaseLabelsOnASingleLine: true
+...

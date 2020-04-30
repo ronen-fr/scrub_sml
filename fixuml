@@ -1,0 +1,21 @@
+#/usr/bin/sed
+s/--> boost::sml::v1_1_0::front::internal : boost::sml::v1_1_0::back::on_entry<boost::sml::v1_1_0::back::_, boost::sml::v1_1_0::back::_>\(.*\)/: on_entry<> \1/g
+s/boost::sml::v1_1_0::front::actions::process::process_impl/process/g
+s/--> boost::sml::v1_1_0::front::internal : boost::sml::v1_1_0::back::on_exit<boost::sml::v1_1_0::back::_, boost::sml::v1_1_0::back::_>\(.*\)/: on_exit<> \1/g
+s=lambda at /home/rfriedma/try/fsm1/./f=\[\]\@=g
+s/boost::sml::v1_1_0::back::sm<boost::sml::v1_1_0::back::sm_policy<fsm_impl::\([a-zA-Z0-9]*\)> >/\1/g
+s/boost::sml::v1_1_0::front:://g
+s/boost::sml::v1_1_0::aux::zero_wrapper<(//g
+s/, void>//g
+s/boost::sml::v1_1_0::aux::zero_wrapper//g
+
+# handle guards
+s/and_<\([^,]*\),\(.*\)>\]/ (\1) \&\& (\2) ] /g
+#s/<not_\(\[\][^)]*]\)/===\1===/g
+
+s/not_<\(\[\][^)]*\))/! (\1)/
+
+s/\([a-zA-Z]*\) --> internal/ \1 --> \1 /
+
+# remove the column numbers
+s/:[0-9]*)/)/g
