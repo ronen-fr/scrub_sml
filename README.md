@@ -1,9 +1,9 @@
 <blockquote>
-Midway upon the journey of our life
+"Midway upon the journey of our life
 <br>
  I found myself within a forest dark,
 <br>
- For the straightforward pathway had been lost.
+ For the straightforward pathway had been lost."
 <br>
                  Dante Alighieri
 </blockquote>
@@ -15,10 +15,10 @@ Midway upon the journey of our life
 
 SML ("your scalable C++14 one header only State Machine Library with no dependencies") was created by
 Kris Jusiak as a modern replacement for boost:MSM and boost::state_chart. As he explains (see for example
-https://youtu.be/yZVby-PuXM0?t=2661), MSM while powerful uses dated technology (MPL) -- resulting in
+https://youtu.be/yZVby-PuXM0?t=2661), MSM while powerful uses dated technology (MPL) - resulting in
 long compilation times, bloated code, and cryptic error messages.
 
-SML offers a convenient, easy to read, syntax - especially when compared with boost::state_charts. For example:
+SML offers a convenient, easy to read, syntax - especially when compared to boost::state_charts. For example:
 ```C++
     return make_transition_table(
        *"idle"_s + event<e1> = "s1"_s
