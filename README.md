@@ -73,7 +73,8 @@ and worst of all:
   SM description (one can call 'process_event' from the passed dependency, but that call is synchronous - which is
   probably the wrong thing to do).
 
-
+  (there is a pretty good sum-up of the problem in https://github.com/boost-experimental/sml/issues/284)
+  
 #### Bottom line:
 
 I will be sticking with state_chart. At least for now.
